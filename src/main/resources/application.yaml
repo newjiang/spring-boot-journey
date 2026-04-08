@@ -1,0 +1,4 @@
+#context.initializer.classes=org.newjiang.springboot.initializer.CherryInitializer
+context:
+  initializer:
+    classes: org.newjiang.springboot.initializer.CherryInitializer

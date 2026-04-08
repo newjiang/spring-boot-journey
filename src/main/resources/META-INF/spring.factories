@@ -1,0 +1,2 @@
+# 注册初始化器，多个则以英文","分割
+org.springframework.context.ApplicationContextInitializer=org.newjiang.springboot.initializer.AppleInitializer
