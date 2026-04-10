@@ -274,12 +274,23 @@ public class AsyncEventListeners {
 # 6.高级特性
 
 ## 6.1.事件继承与层次结构
+例子：[ExtendListener.java](src%2Fmain%2Fjava%2Forg%2Fnewjiang%2Fspringboot%2Flistener%2Fadvancedfeatures%2FExtendListener.java)
+
+简单来说，是根据参数的继承关系来的，这是Java的内容。
 
 ## 6.2.事件聚合与批量处理
 
 ## 6.3.事件过滤
+例子：[FilteredEventListener.java](src%2Fmain%2Fjava%2Forg%2Fnewjiang%2Fspringboot%2Flistener%2Fadvancedfeatures%2FFilteredEventListener.java)
+
+可以结合SpEL表达式过滤，例如：`@EventListener(condition = "#event.priority == 'HIGH' and #event.category == 'ORDER'")`
 
 ## 6.4.事件链与编排
+例子：
+[ChainAListener.java](src%2Fmain%2Fjava%2Forg%2Fnewjiang%2Fspringboot%2Flistener%2Fadvancedfeatures%2FChainAListener.java)
+[ChainBListener.java](src%2Fmain%2Fjava%2Forg%2Fnewjiang%2Fspringboot%2Flistener%2Fadvancedfeatures%2FChainBListener.java)
+
+通过设计模式，将不同事件关联串起来，形成链式。
 
 # 7.源码解读
 详解：org.springframework.boot.SpringApplication的构造方法
